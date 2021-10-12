@@ -7,6 +7,10 @@
 
 import UIKit
 
+
+let wetherSingleton = WhetherModel()
+
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -32,5 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func applicationWillTerminate(_ application: UIApplication){
+        wetherSingleton.save()
+    }
+    
 }
 
