@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Москва" borderStyle="roundedRect" placeholder="Введите название города" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-6f-sbm">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="London" borderStyle="roundedRect" placeholder="Введите название города" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqP-6f-sbm">
                                 <rect key="frame" x="20" y="108" width="374" height="39.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39.5" id="29M-Fj-Zvv"/>

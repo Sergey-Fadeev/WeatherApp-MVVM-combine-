@@ -65,11 +65,11 @@ class CityListUI: UIViewController, UITableViewDelegate, UITableViewDataSource  
                 }
             })
         
-        cityAddCancellable = VM?.$cityAddFailed.sink(receiveValue: {
-            if $0 > 0{
-                self.messageBox(title: "Внимание", message: "Название города некорректно", actionTitle: "OK", comment: "Default action", logMessage: "The city name is incorrect")
+        cityAddCancellable = VM?.$cityAddFailed.sink{_ in 
+            DispatchQueue.main.async { [weak self] in
+                self?.messageBox(title: "Внимание", message: "Название города некорректно", actionTitle: "OK", comment: "Default action", logMessage: "The city name is incorrect")
             }
-        })
+        }
         
         citiesTable.reloadData()
     }
